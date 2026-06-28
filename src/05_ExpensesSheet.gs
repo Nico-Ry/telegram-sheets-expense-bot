@@ -8,7 +8,7 @@
  * Initialize required sheets.
  *******************************************************/
 function initSheets_() {
-  const ss = SpreadsheetApp.openById(SPREADSHEET_ID);
+  const ss = SpreadsheetApp.openById(getSpreadsheetId_());
 
   const expenses = getOrCreateSheet_(ss, EXPENSES_SHEET_NAME);
   ensureExpensesHeader_(expenses);
@@ -73,7 +73,7 @@ function ensureExpensesHeader_(sheet) {
       'yyyyMMdd_HHmmss'
     );
 
-    sheet.copyTo(SpreadsheetApp.openById(SPREADSHEET_ID)).setName(backupName);
+    sheet.copyTo(SpreadsheetApp.openById(getSpreadsheetId_())).setName(backupName);
 
     sheet.clear();
     sheet.appendRow(expectedHeaders);
@@ -94,7 +94,7 @@ function ensureExpensesHeader_(sheet) {
  * Append one parsed expense to the sheet.
  *******************************************************/
 function appendExpense_(msg, updateId, parsed, rawText, userProfile) {
-  const ss = SpreadsheetApp.openById(SPREADSHEET_ID);
+  const ss = SpreadsheetApp.openById(getSpreadsheetId_());
   const sheet = getOrCreateSheet_(ss, EXPENSES_SHEET_NAME);
 
   ensureExpensesHeader_(sheet);
@@ -142,7 +142,7 @@ function appendExpense_(msg, updateId, parsed, rawText, userProfile) {
  * Read expenses as objects.
  *******************************************************/
 function getExpenseRows_() {
-  const ss = SpreadsheetApp.openById(SPREADSHEET_ID);
+  const ss = SpreadsheetApp.openById(getSpreadsheetId_());
   const sheet = getOrCreateSheet_(ss, EXPENSES_SHEET_NAME);
 
   ensureExpensesHeader_(sheet);
@@ -377,7 +377,7 @@ function formatExpensesSheet_(sheet) {
 function testSheetConnection() {
   initSheets_();
 
-  const ss = SpreadsheetApp.openById(SPREADSHEET_ID);
+  const ss = SpreadsheetApp.openById(getSpreadsheetId_());
   const sheet = getOrCreateSheet_(ss, EXPENSES_SHEET_NAME);
 
   ensureExpensesHeader_(sheet);

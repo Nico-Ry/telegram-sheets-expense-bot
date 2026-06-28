@@ -21,7 +21,7 @@
  * });
  */
 function telegramApi_(method, payload) {
-  const url = `https://api.telegram.org/bot${BOT_TOKEN}/${method}`;
+  const url = `https://api.telegram.org/bot${getBotToken_()}/${method}`;
 
   let response;
   let httpCode;

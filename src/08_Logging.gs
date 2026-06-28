@@ -31,12 +31,12 @@ function ensureLogsHeader_(sheet) {
  * Used by almost every part of the bot.
  *******************************************************/
 function log_(stage, detail, extra) {
-  if (typeof ENABLE_LOGGING !== 'undefined' && ENABLE_LOGGING === false) {
+  if (!isLoggingEnabled_()) {
     return;
   }
 
   try {
-    const ss = SpreadsheetApp.openById(SPREADSHEET_ID);
+    const ss = SpreadsheetApp.openById(getSpreadsheetId_());
     const sheet = getOrCreateSheet_(ss, LOG_SHEET_NAME);
 
     ensureLogsHeader_(sheet);

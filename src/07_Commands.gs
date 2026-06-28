@@ -8,7 +8,7 @@ function getBotUserProfile_(msg) {
   const from = msg.from || {};
   const telegramUserId = String(from.id || msg.chat.id || '');
   const username = from.username ? '@' + from.username : '';
-  const configured = BOT_USERS[telegramUserId];
+  const configured = getBotUsers_()[telegramUserId];
 
   const fallbackName = [
     from.first_name || '',
@@ -28,7 +28,7 @@ function getBotUserProfile_(msg) {
     };
   }
 
-  if (ALLOW_UNKNOWN_USERS === true) {
+  if (isUnknownUsersAllowed_() === true) {
     return {
       telegramUserId: telegramUserId,
       name: fallbackName,
@@ -60,7 +60,7 @@ function sendUnauthorizedMessage_(chatId, userProfile) {
     [
       'This bot is private.',
       '',
-      'Ask Nico to add you.',
+      'Ask the bot admin to add you.',
       '',
       `Your Telegram ID is: ${userProfile.telegramUserId}`,
       `Your name appears as: ${userProfile.name}`,

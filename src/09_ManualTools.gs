@@ -126,7 +126,7 @@ function showStatus() {
       return trigger.getHandlerFunction() === POLL_FUNCTION_NAME;
     });
 
-  const ss = SpreadsheetApp.openById(SPREADSHEET_ID);
+  const ss = SpreadsheetApp.openById(getSpreadsheetId_());
   const expensesSheet = getOrCreateSheet_(ss, EXPENSES_SHEET_NAME);
   const logsSheet = getOrCreateSheet_(ss, LOG_SHEET_NAME);
   const dashboardSheet = getOrCreateSheet_(ss, DASHBOARD_SHEET_NAME);
@@ -134,7 +134,7 @@ function showStatus() {
   const status = {
     lastUpdateId: props.getProperty('LAST_UPDATE_ID') || 'none',
     pollingTriggers: pollingTriggers.length,
-    spreadsheetId: SPREADSHEET_ID,
+    spreadsheetId: getSpreadsheetId_(),
     expensesSheetName: EXPENSES_SHEET_NAME,
     expensesRows: expensesSheet.getLastRow(),
     logsSheetName: LOG_SHEET_NAME,
@@ -142,7 +142,7 @@ function showStatus() {
     dashboardSheetName: DASHBOARD_SHEET_NAME,
     dashboardRows: dashboardSheet.getLastRow(),
     defaultCurrency: DEFAULT_CURRENCY,
-    loggingEnabled: ENABLE_LOGGING
+    loggingEnabled: isLoggingEnabled_()
   };
 
   Logger.log(JSON.stringify(status, null, 2));
@@ -173,7 +173,7 @@ function rebuildEverythingNow() {
  * Clear BotLogs but keep the header.
  *******************************************************/
 function clearBotLogs() {
-  const ss = SpreadsheetApp.openById(SPREADSHEET_ID);
+  const ss = SpreadsheetApp.openById(getSpreadsheetId_());
   const sheet = getOrCreateSheet_(ss, LOG_SHEET_NAME);
 
   sheet.clear();
@@ -187,7 +187,7 @@ function clearBotLogs() {
  * Clear Dashboard completely and rebuild it.
  *******************************************************/
 function clearAndRebuildDashboard() {
-  const ss = SpreadsheetApp.openById(SPREADSHEET_ID);
+  const ss = SpreadsheetApp.openById(getSpreadsheetId_());
   const dashboard = getOrCreateSheet_(ss, DASHBOARD_SHEET_NAME);
 
   removeAllCharts_(dashboard);
@@ -210,7 +210,7 @@ function clearAndRebuildDashboard() {
  * Use only while testing.
  *******************************************************/
 function clearExpensesKeepHeader() {
-  const ss = SpreadsheetApp.openById(SPREADSHEET_ID);
+  const ss = SpreadsheetApp.openById(getSpreadsheetId_());
   const sheet = getOrCreateSheet_(ss, EXPENSES_SHEET_NAME);
 
   sheet.clear();

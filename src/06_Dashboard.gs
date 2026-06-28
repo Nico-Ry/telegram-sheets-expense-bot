@@ -8,7 +8,7 @@
  * Main dashboard rebuild.
  *******************************************************/
 function rebuildDashboard_() {
-  const ss = SpreadsheetApp.openById(SPREADSHEET_ID);
+  const ss = SpreadsheetApp.openById(getSpreadsheetId_());
   const expensesSheet = getOrCreateSheet_(ss, EXPENSES_SHEET_NAME);
   const dashboard = getOrCreateSheet_(ss, DASHBOARD_SHEET_NAME);
 
