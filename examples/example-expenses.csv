@@ -1,0 +1,4 @@
+Timestamp,Date,Month,Person,Description,Category,Amount,Currency,RawText,ChatId,MessageId,UpdateId,Role,TelegramUserId
+2026-06-28T12:00:00.000Z,2026-06-28,2026-06,Nico,coffee,Food,4,CHF,coffee 4,123456789,101,1001,admin,123456789
+2026-06-28T12:05:00.000Z,2026-06-28,2026-06,Nico,FlixBus,Transport,82,EUR,82 euros FlixBus,123456789,102,1002,admin,123456789
+2026-06-28T12:10:00.000Z,2026-06-28,2026-06,Family Member,migros,Groceries,12.5,CHF,migros 12.50 chf,987654321,103,1003,user,987654321

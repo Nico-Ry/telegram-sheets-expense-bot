@@ -1,0 +1,40 @@
+{
+  "name": "telegram-sheets-expense-bot",
+  "version": "0.1.0",
+  "description": "A Telegram expense tracker bot built with Google Apps Script and Google Sheets.",
+  "license": "MIT",
+  "private": false,
+  "type": "commonjs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nico-Ry/telegram-sheets-expense-bot.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Nico-Ry/telegram-sheets-expense-bot/issues"
+  },
+  "homepage": "https://github.com/Nico-Ry/telegram-sheets-expense-bot#readme",
+  "keywords": [
+    "telegram-bot",
+    "google-apps-script",
+    "google-sheets",
+    "expense-tracker",
+    "javascript",
+    "automation",
+    "clasp",
+    "personal-finance",
+    "trip-expenses"
+  ],
+  "scripts": {
+    "clasp:login": "clasp login",
+    "clasp:create": "clasp create --type standalone --title \"Telegram Sheets Expense Bot\" --rootDir src",
+    "clasp:push": "clasp push",
+    "clasp:pull": "clasp pull",
+    "clasp:open": "clasp open-script",
+    "clasp:status": "clasp status",
+    "clasp:version": "clasp version",
+    "clasp:deployments": "clasp deployments"
+  },
+  "devDependencies": {
+    "@google/clasp": "^3.3.0"
+  }
+}
