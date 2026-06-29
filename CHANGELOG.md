@@ -23,3 +23,11 @@ The format is inspired by [Keep a Changelog](https://keepachangelog.com/en/1.1.0
 
 ### Security
 - Telegram bot token, spreadsheet ID, and Telegram user IDs are no longer stored in source code.
+
+### Verified
+
+- Tested clean `clasp` install flow with a new standalone Apps Script project.
+- Verified Script Properties configuration.
+- Verified Telegram connection with `testTelegramConnection`.
+- Verified `setupOnce`, polling, message parsing, multiple currencies, and Google Sheets writes.
+- Confirmed `.clasp.json`, `.clasprc.json`, tokens, and spreadsheet IDs are not committed.

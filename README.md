@@ -36,6 +36,20 @@ lunch €12
 
 The bot stores the amount, currency, description, detected category, Telegram user, date, month, update ID, and message ID.
 
+## Project status
+
+This template has been tested with a clean Apps Script project using `clasp`.
+
+Verified:
+
+- Telegram polling with `getUpdates`
+- Script Properties configuration
+- Google Sheets expense storage
+- Multiple currencies
+- Dashboard setup
+- Bot logs
+- Admin/user permissions
+
 ## Screenshots
 
 Screenshots are intentionally not included yet to avoid leaking private data.
