@@ -5,14 +5,6 @@
 </p>
 
 <p align="center">
-  <strong>A Telegram expense tracker bot powered by Google Apps Script and Google Sheets.</strong>
-</p>
-
-<p align="center">
-  Send messages like <code>coffee 4</code>, <code>flixbus 82 euro</code>, or <code>migros 12.50 chf</code> and automatically track expenses, users, categories, currencies, dashboards, and shared trip totals.
-</p>
-
-<p align="center">
   <a href="LICENSE">
     <img src="https://img.shields.io/github/license/Nico-Ry/telegram-sheets-expense-bot" alt="License">
   </a>
@@ -24,6 +16,15 @@
   <img src="https://img.shields.io/badge/transport-polling-informational" alt="Polling">
   <img src="https://img.shields.io/badge/status-tested-success" alt="Tested">
 </p>
+
+<p align="center">
+  <strong>A Telegram expense tracker bot powered by Google Apps Script and Google Sheets.</strong>
+</p>
+
+<p align="center">
+  Send messages like <code>coffee 4</code>, <code>flixbus 82 euro</code>, or <code>migros 12.50 chf</code> and automatically track expenses, users, categories, currencies, dashboards, and shared trip totals.
+</p>
+
 
 ---
 
