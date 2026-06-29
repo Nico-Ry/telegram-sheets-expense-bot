@@ -1,0 +1,188 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Telegram Sheets Expense Bot Logo</title>
+  <desc id="desc">A centered app icon showing a chat bubble, spreadsheet grid, paper plane, expense coin, and stylish Nico-Ry signature.</desc>
+
+  <defs>
+    <linearGradient id="navy" x1="260" y1="180" x2="790" y2="770" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0B2A4A"/>
+      <stop offset="1" stop-color="#061A33"/>
+    </linearGradient>
+
+    <linearGradient id="green" x1="310" y1="390" x2="770" y2="730" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22C55E"/>
+      <stop offset="1" stop-color="#15803D"/>
+    </linearGradient>
+
+    <linearGradient id="blue" x1="430" y1="230" x2="620" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#93C5FD"/>
+      <stop offset="1" stop-color="#38BDF8"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-15%" y="-15%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#0B2A4A" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <!-- Outer frame -->
+  <rect
+    x="64"
+    y="64"
+    width="896"
+    height="896"
+    rx="176"
+    fill="#FFFFFF"
+    stroke="#0B2A4A"
+    stroke-width="18"
+  />
+
+  <!-- Main bubble -->
+  <g filter="url(#shadow)">
+    <path
+      d="M512 185
+         C329 185 184 310 184 466
+         C184 548 220 622 278 674
+         L246 772
+         C240 791 260 807 277 797
+         L388 732
+         C427 742 468 747 512 747
+         C695 747 840 622 840 466
+         C840 310 695 185 512 185Z"
+      fill="url(#navy)"
+    />
+  </g>
+
+  <!-- Paper plane moved higher -->
+  <g filter="url(#shadow)">
+    <path
+      d="M405 286
+         L641 214
+         C658 209 671 226 663 241
+         L562 405
+         C553 419 533 418 526 403
+         L494 340
+         L405 314
+         C389 309 389 291 405 286Z"
+      fill="#FFFFFF"
+    />
+
+    <path
+      d="M494 340
+         L659 223
+         L526 403
+         L494 340Z"
+      fill="url(#blue)"
+    />
+
+    <path
+      d="M494 340
+         L405 314
+         L659 223
+         L494 340Z"
+      fill="#F8FAFC"
+    />
+  </g>
+
+  <!-- Spreadsheet clearly below the plane -->
+  <g>
+    <rect
+      x="315"
+      y="455"
+      width="394"
+      height="246"
+      rx="24"
+      fill="#FFFFFF"
+      stroke="#FFFFFF"
+      stroke-width="12"
+    />
+
+    <rect
+      x="315"
+      y="455"
+      width="394"
+      height="58"
+      rx="24"
+      fill="url(#green)"
+    />
+
+    <rect x="315" y="492" width="394" height="25" fill="url(#green)"/>
+
+    <rect
+      x="315"
+      y="455"
+      width="394"
+      height="246"
+      rx="24"
+      fill="none"
+      stroke="#0B2A4A"
+      stroke-width="7"
+    />
+
+    <!-- Grid horizontal lines -->
+    <line x1="315" y1="513" x2="709" y2="513" stroke="#0B2A4A" stroke-width="7"/>
+    <line x1="315" y1="560" x2="709" y2="560" stroke="#0B2A4A" stroke-width="6"/>
+    <line x1="315" y1="607" x2="709" y2="607" stroke="#0B2A4A" stroke-width="6"/>
+    <line x1="315" y1="654" x2="709" y2="654" stroke="#0B2A4A" stroke-width="6"/>
+
+    <!-- Grid vertical lines -->
+    <line x1="414" y1="455" x2="414" y2="701" stroke="#0B2A4A" stroke-width="6"/>
+    <line x1="512" y1="455" x2="512" y2="701" stroke="#0B2A4A" stroke-width="6"/>
+    <line x1="611" y1="455" x2="611" y2="701" stroke="#0B2A4A" stroke-width="6"/>
+  </g>
+
+  <!-- Coin -->
+  <g filter="url(#shadow)">
+    <circle cx="720" cy="668" r="98" fill="#FFFFFF"/>
+    <circle cx="720" cy="668" r="82" fill="url(#green)" stroke="#0B2A4A" stroke-width="7"/>
+
+    <path
+      d="M720 608V728"
+      stroke="#FFFFFF"
+      stroke-width="16"
+      stroke-linecap="round"
+    />
+
+    <path
+      d="M757 636
+         C745 614 684 612 684 648
+         C684 683 758 659 758 702
+         C758 742 694 743 677 715"
+      stroke="#FFFFFF"
+      stroke-width="17"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    />
+  </g>
+
+  <!-- Stylish signature -->
+  <g opacity="0.96">
+    <path
+      d="M398 864
+         C430 850 458 850 490 864"
+      stroke="#D7E3F0"
+      stroke-width="4"
+      stroke-linecap="round"
+      fill="none"
+    />
+
+    <text
+      x="512"
+      y="892"
+      text-anchor="middle"
+      font-family="Snell Roundhand, Segoe Script, Brush Script MT, Lucida Handwriting, cursive"
+      font-size="44"
+      font-weight="600"
+      letter-spacing="1"
+      fill="#0B2A4A">
+      Nico-Ry
+    </text>
+
+    <path
+      d="M430 903
+         C462 917 562 917 594 903"
+      stroke="#0B2A4A"
+      stroke-width="3.5"
+      stroke-linecap="round"
+      fill="none"
+    />
+  </g>
+</svg>
