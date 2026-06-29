@@ -1,7 +1,7 @@
 # Telegram Sheets Expense Bot
 
 <p align="center">
-  <img src="assets/logo.svg" alt="Telegram Sheets Expense Bot logo" width="180">
+  <img src="assets/banner.png" alt="Telegram Sheets Expense Bot banner" width="100%">
 </p>
 
 <p align="center">
